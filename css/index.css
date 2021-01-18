@@ -1,0 +1,114 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  min-height: 70rem;
+}
+.form {
+  width: 90%;
+  margin: auto;
+  height: fit-content;
+}
+.navbar-nav li {
+  margin: auto;
+  margin-right: 10%;
+}
+.navbar {
+  font-family: "Qanelas Thin";
+  width: 70%;
+  margin: auto;
+}
+#tableInfo {
+  font-family: "Qanelas Thin";
+  margin: auto;
+  margin-top: 10%;
+  width: 95%;
+  height: 12rem;
+  bottom: -15rem;
+  position: relative;
+  animation: scroll1 1s forwards ease-in-out;
+  display: none;
+}
+
+@keyframes scroll1 {
+  from {
+    bottom: -15rem;
+  }
+  to {
+    bottom: 2rem;
+  }
+}
+
+#formContainer {
+  font-family: "Comfortaa";
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+  background-color: #e6edf1;
+  margin-top: 7%;
+  padding: 1%;
+  bottom: -5rem;
+  position: relative;
+  animation: scroll2 1.5s forwards ease-in-out;
+  display: none;
+}
+@keyframes scroll2 {
+  from {
+    bottom: -25rem;
+  }
+  to {
+    bottom: 2rem;
+  }
+}
+td,
+th {
+  border: none;
+}
+
+input,
+textarea {
+  box-shadow: 0px 2px 16px 2px rgba(159, 159, 159, 0.64);
+}
+.table {
+  width: 50%;
+  margin: auto;
+  font-size: 70%;
+  background-color: #f6f8f9;
+}
+.animationTable {
+  display: flex;
+  height: inherit;
+  background-color: #f6f8f9;
+}
+
+.isValid {
+  box-shadow: 0 0 2px 1px green;
+}
+.isNotValid {
+  box-shadow: 0 0 2px 1px red;
+}
+@media only screen and (max-width: 992px) {
+  .table {
+    font-size: 45%;
+  }
+  .formContainer {
+    width: 80%;
+  }
+  input,
+  textarea {
+    box-shadow: none;
+  }
+  .navbar-brand {
+    width: min-content;
+  }
+  .navbar-nav li {
+    margin: 0;
+  }
+  .navbar {
+    width: 95%;
+    margin: auto;
+  }
+  #formContainer {
+    width: 95%;
+  }
+}

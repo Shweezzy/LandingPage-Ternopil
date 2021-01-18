@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/index.css">
+    <!--Animation library-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" /> -->
+    <!--Библиотека анимации всплывающее меню-->
+    <!-- <script src="/middleware/wow.min.js"></script> -->
+    <!-- <script>
+        new WOW().init();
+    </script> -->
+    <title>Ternopil</title>
+</head>
+
+<body>
+    <div class="sticky-top" style="width: 100%; background-color: white;">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <a class="navbar-brand"><img src="images/logo.png" width="40%" alt="logo">
+                Тернопіль &ensp;
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="width: 30%">
+                    <li class="nav-item active">
+                        <small class="text-warning m-auto">УКР&duhar;</small>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Default weather widget -->
+                        <a id="ms-informer-link-141d6140da5dc784a8589e5eb22c4a89" class="ms-informer-link"></a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="dropdown">
+                        <button class="btn btn-warning text-light shadow-none" id="btnInfo" data-bs-toggle="collapse"
+                            href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            ПЕРШИЙ РАЗ У ТЕРНОПОЛІ?
+                        </button>
+                    </div>
+                </div>
+
+        </nav>
+    </div>
+    <div class="d-block">
+        <div class="collapse wow fadeIn" id="collapseExample">
+            <div class="card card-body mt-5" style="width: 90%; margin: auto;">
+                Тернопіль - одне із наймальовничіших міст західної України. Затишок і спокій тут витає у повітрі. Якщо
+                ви
+                втомились від метушливого життя у великому місті, тоді Тернопіль саме те місто, яке потрібно відвідати
+                для
+                релаксу і відпочинку, а також насолодитися його неймовірними краєвидами та мальовничими місцями.
+                <p>Ось Вам список деяких місць Тернополя, які варто відвідати приїхавши сюди:</p>
+                <ul class="list-group border-0">
+                    <li class="list-group-item"><i>Тернопільський став. </i> Площа водосховища становить 300 га, це як
+                        весь
+                        Східний
+                        масив. Тернопільському ставу приблизно стільки ж років, як і місту Тернополю.</li>
+                    <li class="list-group-item"><i>Тернопільський замок. </i> Закладений коронним гетьманом Я.
+                        Тарновським
+                        (на честь
+                        нього, до речі, і названо місто) для оборони від нападів кримських татар.</li>
+                    <li class="list-group-item"><i>Острівок закоханих. </i> Одне з найромантичніших місць. Розташований
+                        серед
+                        Тернопільського ставу, дістатись до нього можна за допомогою спеціального місточка.</li>
+                    <li class="list-group-item"><i>Пляж "Циганка".</i> 28 серпня 2016 на День міста у Тернополі відкрили
+                        оновлений
+                        пляж "Циганка""</li>
+                    <li class="list-group-item"><i>Єлисейські поля. </i> Це кавер на знамениту туристичну місцину
+                        Парижу.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="text-center mt-5 fadeInUp" id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1294.1578378627933!2d25.58964195824496!3d49.554066594840435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473036b52f962b41%3A0x9273d6738fc833cd!2z0KLQtdGA0L3QvtC_0L7Qu9GM0YHQutC40Lkg0LPQvtGA0L7QtNGB0LrQvtC5INGB0L7QstC10YI!5e0!3m2!1sru!2sua!4v1610904147603!5m2!1sru!2sua"
+            width="95%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+    <div id="tableInfo" class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="100">
+        <div class="animationTable">
+            <table class="table">
+                <thead id="headingTable">
+                    <tr>
+                        <th scope="col" id="infoCentre">Туристический информационный центр:</th>
+                        <th scope="col" id="infoAdmin">Администрация:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="city">Город Тернополь, 69000</td>
+                        <td id="phone">+380504242054</td>
+
+                    </tr>
+                    <tr>
+
+                        <td id="adress">проспект Соборный 151</td>
+                        <td id="phone">+380617087001</td>
+
+                    </tr>
+                    <tr>
+                        <td id="email">mycitytic@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="wow fadeInUp" id="formContainer" data-wow-duration="1.5s" data-wow-offset="115">
+        <form class="form form-group" name="feedback">
+            <br>
+            <h1 style="text-align: center;">Напишите нам</h1>
+            <br>
+            <div class="form-outline mb-4 d-flex justify-content-between shadow-none">
+                <div> Ваше имя
+                    <input type="text" name="nameValidator" data-validate-field="name" id="feedbackName"
+                        class="form-control" />
+                </div>
+                <div> Ваш телефон
+                    <input type="tel" data-validate-field="tel" autocomplete="off" id="feedbackNumber"
+                        class="form-control" />
+                </div>
+
+
+            </div>
+
+            <div class="form-outline mb-4">
+                Email
+                <input name="emailValidator" type="email" data-validate-field="email" id="feedbackEmail"
+                    class="form-control" aria-describedby="emailHelp" />
+
+            </div>
+
+            <div class="form-outline mb-4">
+                Сообщение
+                <textarea class="form-control" id="feedbackMsg" rows="4" data-validate-field="text"
+                    style="resize: none;"></textarea>
+            </div>
+            <!-- manual validator via classes (template)
+            <div class="d-flex justify-content-end form-outline mb-4"> <button type="button" id="asd" class="btn"
+                    onclick="ValidateEmail(document.feedback.nameValidator,document.feedback.emailValidator)">Отправить</button>
+            </div> -->
+            <div class="d-flex justify-content-end form-outline mb-4"> <button type="submit"
+                    class="btn">Отправить</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <!--Plugins for validation and mask fields of phone number, name, soap -->
+    <script src="/middleware/numberphone.js"></script>
+    <script src="/middleware/formvalidator.js"></script>
+    <!-- Weather informer -->
+    <script class="ms-informer-script" src="/middleware/weather.js"></script>
+    <!--Map-->
+    <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-7tiRnCaCcJY90iZaGqlTqjIk6M-bGtE&callback=initMap&libraries=&v=weekly"
+        defer></script> -->
+    <script src="/index.js"></script>
+</body>
+
+</html>
